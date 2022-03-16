@@ -1,3 +1,5 @@
+from multiprocessing.sharedctypes import Value
+
 from aws_cdk import aws_dynamodb as ddb
 from aws_cdk import aws_lambda as _lambda
 from constructs import Construct
@@ -13,8 +15,15 @@ class HitCounter(Construct):
         return self._table
 
     def __init__(
-        self, scope: Construct, id: str, downstream: _lambda.IFunction, **kwargs
+        self,
+        scope: Construct,
+        id: str,
+        downstream: _lambda.IFunction,
+        read_capacity: int = 5,
+        **kwargs
     ):
+        if read_capacity < 5 or read_capacity > 20:
+            raise ValueError("readCapacity must be greater than 5 or less than 20.")
         super().__init__(scope, id, **kwargs)
 
         # We defined a DynamoDB table with path as the partition key (every DynamoDB table must have a single partition key).
@@ -22,6 +31,8 @@ class HitCounter(Construct):
             self,
             "Hits",
             partition_key={"name": "path", "type": ddb.AttributeType.STRING},
+            encryption=ddb.TableEncryption.AWS_MANAGED,
+            read_capacity=read_capacity,
         )
 
         # We defined a Lambda function which is bound to the lambda/hitcount.handler code.

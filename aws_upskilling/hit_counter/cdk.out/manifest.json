@@ -7,27 +7,27 @@
         "file": "tree.json"
       }
     },
-    "hit-counter.assets": {
+    "PipelineStack.assets": {
       "type": "cdk:asset-manifest",
       "properties": {
-        "file": "hit-counter.assets.json",
+        "file": "PipelineStack.assets.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
       }
     },
-    "hit-counter": {
+    "PipelineStack": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/unknown-region",
       "properties": {
-        "templateFile": "hit-counter.template.json",
+        "templateFile": "PipelineStack.template.json",
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e06ce062daebdcf4ab8a6134f7df735f8a7b33d5b276a4ce6aba730d2e5ff5d6.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/77ad5f55e3b620e0aaff3cbeccee1efe40335b4079166ff06e1de92b1ba89879.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
-          "hit-counter.assets"
+          "PipelineStack.assets"
         ],
         "lookupRole": {
           "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
@@ -36,149 +36,41 @@
         }
       },
       "dependencies": [
-        "hit-counter.assets"
+        "PipelineStack.assets"
       ],
       "metadata": {
-        "/hit-counter/HelloHandler/ServiceRole/Resource": [
+        "/PipelineStack/WorkshopRepo/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHandlerServiceRole11EF7C63"
+            "data": "WorkshopRepoE6F95803"
           }
         ],
-        "/hit-counter/HelloHandler/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "HelloHandler2E4FBA4D"
-          }
-        ],
-        "/hit-counter/HelloHitCounter/Hits/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHits7AAEBF80"
-          }
-        ],
-        "/hit-counter/HelloHitCounter/HitCountHandler/ServiceRole/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHitCountHandlerServiceRole42AAF829"
-          }
-        ],
-        "/hit-counter/HelloHitCounter/HitCountHandler/ServiceRole/DefaultPolicy/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHitCountHandlerServiceRoleDefaultPolicy0295D032"
-          }
-        ],
-        "/hit-counter/HelloHitCounter/HitCountHandler/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHitCountHandler2475EAC2"
-          }
-        ],
-        "/hit-counter/Endpoint/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointEEF1FD8F"
-          }
-        ],
-        "/hit-counter/Endpoint/CloudWatchRole/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointCloudWatchRoleC3C64E0F"
-          }
-        ],
-        "/hit-counter/Endpoint/Account": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointAccountB8304247"
-          }
-        ],
-        "/hit-counter/Endpoint/Deployment/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointDeployment318525DA10a92215229ae518423d56bc148e41e2"
-          }
-        ],
-        "/hit-counter/Endpoint/DeploymentStage.prod/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointDeploymentStageprodB78BEEA0"
-          }
-        ],
-        "/hit-counter/Endpoint/Endpoint": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "Endpoint8024A810"
-          }
-        ],
-        "/hit-counter/Endpoint/Default/{proxy+}/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "Endpointproxy39E2174E"
-          }
-        ],
-        "/hit-counter/Endpoint/Default/{proxy+}/ANY/ApiPermission.hitcounterEndpointDDFA7B7B.ANY..{proxy+}": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYApiPermissionhitcounterEndpointDDFA7B7BANYproxy0EBA7FED"
-          }
-        ],
-        "/hit-counter/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.hitcounterEndpointDDFA7B7B.ANY..{proxy+}": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYApiPermissionTesthitcounterEndpointDDFA7B7BANYproxy80D535BC"
-          }
-        ],
-        "/hit-counter/Endpoint/Default/{proxy+}/ANY/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYC09721C5"
-          }
-        ],
-        "/hit-counter/Endpoint/Default/ANY/ApiPermission.hitcounterEndpointDDFA7B7B.ANY..": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointANYApiPermissionhitcounterEndpointDDFA7B7BANY42574770"
-          }
-        ],
-        "/hit-counter/Endpoint/Default/ANY/ApiPermission.Test.hitcounterEndpointDDFA7B7B.ANY..": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointANYApiPermissionTesthitcounterEndpointDDFA7B7BANY6E8C6C89"
-          }
-        ],
-        "/hit-counter/Endpoint/Default/ANY/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EndpointANY485C938B"
-          }
-        ],
-        "/hit-counter/CDKMetadata/Default": [
+        "/PipelineStack/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata"
           }
         ],
-        "/hit-counter/CDKMetadata/Condition": [
+        "/PipelineStack/CDKMetadata/Condition": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable"
           }
         ],
-        "/hit-counter/BootstrapVersion": [
+        "/PipelineStack/BootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
             "data": "BootstrapVersion"
           }
         ],
-        "/hit-counter/CheckBootstrapVersion": [
+        "/PipelineStack/CheckBootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CheckBootstrapVersion"
           }
         ]
       },
-      "displayName": "hit-counter"
+      "displayName": "PipelineStack"
     }
   }
 }

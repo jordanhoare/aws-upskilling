@@ -34,6 +34,6 @@ class HitCounterStack(Stack):
         TableViewer(
             self,
             "ViewHitCounter",
-            title="Hello Hits",
+            title="Hit Counter",
             table=hello_with_counter.table,
         )
