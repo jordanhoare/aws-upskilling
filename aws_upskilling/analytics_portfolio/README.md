@@ -1,13 +1,12 @@
 # 📝 Description
 
-This code provisions a sequence of modules, covering various aspects of building an analytics platform on AWS. The platform ingests, stores, transforms and consumes data using several analytics services such as AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight as well as AWS Lambda and Amazon Redshift.  All infrastructure is "serverless" and pay per usage so there aren't any persistent servers.
-
-</br>
-
 ![Architecture](https://static.us-east-1.prod.workshops.aws/public/b5a3115a-dc06-417b-ac61-6f2c7bc1936b/static/images/lab-architecture.png?classes=shadow)
 
 </br>
 
+This code provisions a sequence of modules, covering various aspects of building an analytics platform on AWS. The platform ingests, stores, transforms and consumes data using several analytics services such as AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight as well as AWS Lambda and Amazon Redshift.  All infrastructure is "serverless" and pay per usage so there aren't any persistent servers.
+
+</br>
 
 - [ ] Design serverless data lake architecture
 - [ ] Build a data processing pipeline and Data Lake using Amazon S3 for storing data
