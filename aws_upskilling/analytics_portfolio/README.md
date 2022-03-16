@@ -4,7 +4,7 @@ This code provisions a sequence of modules, covering various aspects of building
 
 </br>
 
-![Alt text](lab-architecture.png)
+[![Architecture](lab-architecture.png)](https://static.us-east-1.prod.workshops.aws/public/b5a3115a-dc06-417b-ac61-6f2c7bc1936b/static/images/lab-architecture.png?classes=shadow)
 
 </br>
 
