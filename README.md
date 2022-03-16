@@ -30,9 +30,7 @@ https://workshops.aws/
 ## Running the app
 
 ```bash
-# clone the repo, navigate to the project folder.  to start the venv, run:
-poetry start
-poetry shell
+....
 ```
 
 </br>
