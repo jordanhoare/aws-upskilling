@@ -1,4 +1,4 @@
-# 📝 Description
+# 📝 Architecture & Description
 
 ![Architecture](https://static.us-east-1.prod.workshops.aws/public/b5a3115a-dc06-417b-ac61-6f2c7bc1936b/static/images/lab-architecture.png?classes=shadow)
 
