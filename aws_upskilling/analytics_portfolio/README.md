@@ -8,12 +8,12 @@ This code provisions a sequence of modules, covering various aspects of building
 
 </br>
 
-- [ ] Design serverless data lake architecture
-- [ ] Build a data processing pipeline and Data Lake using Amazon S3 for storing data
-- [ ] Use Amazon Kinesis for real-time streaming data
-- [ ] Use AWS Glue to automatically catalog datasets
-- [ ] Data Transformation
-    - [ ] Run interactive ETL scripts in an Amazon SageMaker Jupyter notebook connected to an AWS Glue development endpoint
+- [x] Design serverless data lake architecture
+- [x] Build a data processing pipeline and Data Lake using Amazon S3 for storing data
+- [x] Use Amazon Kinesis for real-time streaming data
+- [x] Use AWS Glue to automatically catalog datasets
+- [x] Data Transformation
+    - [x] Run interactive ETL scripts in an Amazon SageMaker Jupyter notebook connected to an AWS Glue development endpoint
     - [ ] Use Glue Studio to run, and monitor ETL jobs in AWS Glue.
     - [ ] Use Glue DataBrew to do data preparation
     - [ ] Use EMR to run a Spark transformation job
