@@ -14,11 +14,11 @@ This code provisions a sequence of modules, covering various aspects of building
 - [x] Use AWS Glue to automatically catalog datasets
 - [x] Data Transformation
     - [x] Run interactive ETL scripts in an Amazon SageMaker Jupyter notebook connected to an AWS Glue development endpoint
-    - [ ] Use Glue Studio to run, and monitor ETL jobs in AWS Glue.
+    - [x] Use Glue Studio to run, and monitor ETL jobs in AWS Glue.
     - [ ] Use Glue DataBrew to do data preparation
     - [ ] Use EMR to run a Spark transformation job
 - [ ] Load data to Amazon Redshift from Glue
 - [ ] Intro into Amazon Redshift Best design practices.
-- [ ] Query data using Amazon Athena & visualize it using Amazon QuickSight
+- [x] Query data using Amazon Athena & visualize it using Amazon QuickSight
 
 </br>
