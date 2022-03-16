@@ -1,0 +1,94 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "hit-counter.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "hit-counter.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "hit-counter": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "hit-counter.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/b07df5067738bd6c9c1efe647c0acf58706da9895edaebdc87bfe4a56c54eaf0.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "hit-counter.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "hit-counter.assets"
+      ],
+      "metadata": {
+        "/hit-counter/HitCounterQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HitCounterQueueF091C6E1"
+          }
+        ],
+        "/hit-counter/HitCounterQueue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HitCounterQueuePolicy72681AF7"
+          }
+        ],
+        "/hit-counter/HitCounterQueue/hitcounterHitCounterTopicC2E9E2ED/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HitCounterQueuehitcounterHitCounterTopicC2E9E2EDC6F931D1"
+          }
+        ],
+        "/hit-counter/HitCounterTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HitCounterTopic1106EC80"
+          }
+        ],
+        "/hit-counter/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/hit-counter/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/hit-counter/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/hit-counter/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "hit-counter"
+    }
+  }
+}
