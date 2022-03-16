@@ -9,9 +9,10 @@ A collection of AWS workshops (https://workshops.aws/) used to upskill.  The pro
 
 
 ## AWS Portfolio
-  - [x] Click-counter (API Gateway and Lambda-based website w/ DynamoDB)
-  - [ ] Fraud Detection (Streaming, NoSQL, Kafka)
-  - [ ] ETL On AWS (EMR, Spark, Hive, Hudi, Auto-scaling)
+- [x] Click-counter (API Gateway and Lambda-based website w/ DynamoDB)
+- [ ] Analytics (Glue, EMR, Athena, QuickSight, Redshift, Lambda)
+- [ ] Fraud Detection (Streaming, NoSQL, Kafka)
+- [ ] ETL On AWS (EMR, Spark, Hive, Hudi, Auto-scaling)
 
 </br>
 
