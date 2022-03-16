@@ -2,7 +2,6 @@
 ============
 [![GitHub Stars](https://img.shields.io/github/stars/jordanhoare/aws-upskilling.svg)](https://github.com/jordanhoare/aws-upskilling/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/jordanhoare/aws-upskilling.svg)](https://github.com/jordanhoare/aws-upskilling/issues) [![Current Version](https://img.shields.io/badge/version-0.5.0-green.svg)](https://github.com/jordanhoare/aws-upskilling) 
 
-...
 
 The purpose of this repo is to upskill on AWS services.   
 
