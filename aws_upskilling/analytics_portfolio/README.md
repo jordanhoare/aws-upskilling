@@ -4,7 +4,7 @@ This code provisions a sequence of modules, covering various aspects of building
 
 </br>
 
-![Alt text](.lab-architecture.png)
+![Alt text](lab-architecture.png)
 
 </br>
 
