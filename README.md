@@ -18,7 +18,6 @@ A collection of AWS workshops (https://workshops.aws/) used to upskill.  The pro
 ## Requirements 
 - Python 
 - AWS CLI 
-- AWS CDK
 - Poetry (https://python-poetry.org/docs/)
 
 </br>
