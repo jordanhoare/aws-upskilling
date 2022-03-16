@@ -1,4 +1,4 @@
-[WIP] AWS Upskilling
+AWS Upskilling
 ============
 [![GitHub Stars](https://img.shields.io/github/stars/jordanhoare/aws-upskilling.svg)](https://github.com/jordanhoare/aws-upskilling/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/jordanhoare/aws-upskilling.svg)](https://github.com/jordanhoare/aws-upskilling/issues) [![Current Version](https://img.shields.io/badge/version-0.5.0-green.svg)](https://github.com/jordanhoare/aws-upskilling) 
 
@@ -9,7 +9,7 @@ A collection of AWS workshops (https://workshops.aws/) used to upskill.  The pro
 
 
 ## AWS Portfolio
-  - [x] Click-counter (API Gateway and Lambda-based w/ DynamoDB)
+  - [x] Click-counter (API Gateway and Lambda-based website w/ DynamoDB)
   - [ ] Fraud Detection (Streaming, NoSQL, Kafka)
   - [ ] ETL On AWS (EMR, Spark, Hive, Hudi, Auto-scaling)
 
