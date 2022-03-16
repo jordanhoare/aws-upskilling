@@ -22,5 +22,3 @@ This code provisions a sequence of modules, covering various aspects of building
 - [ ] Query data using Amazon Athena & visualize it using Amazon QuickSight
 
 </br>
-
-![Alt Text](https://media.giphy.com/media/fU1RUGt90DG8xG8EAR/giphy.gif)
