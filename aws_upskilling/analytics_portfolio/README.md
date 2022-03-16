@@ -1,9 +1,10 @@
 # 📝 Description
 
 This code provisions a sequence of modules, covering various aspects of building an analytics platform on AWS. The platform ingests, stores, transforms and consumes data using several analytics services such as AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight as well as AWS Lambda and Amazon Redshift.  All infrastructure is "serverless" and pay per usage so there aren't any persistent servers.
+
 </br>
 
-![Alt text](lab-architecture.png)
+![Alt text](.lab-architecture.png)
 
 </br>
 
