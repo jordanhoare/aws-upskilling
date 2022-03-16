@@ -80,6 +80,9 @@
         "ProvisionedThroughput": {
           "ReadCapacityUnits": 5,
           "WriteCapacityUnits": 5
+        },
+        "SSESpecification": {
+          "SSEEnabled": true
         }
       },
       "UpdateReplacePolicy": "Retain",
@@ -685,7 +688,7 @@
             "TABLE_NAME": {
               "Ref": "HelloHitCounterHits7AAEBF80"
             },
-            "TITLE": "Hello Hits",
+            "TITLE": "Hit Counter",
             "SORT_BY": ""
           }
         },
