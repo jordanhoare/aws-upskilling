@@ -3,35 +3,23 @@
 [![GitHub Stars](https://img.shields.io/github/stars/jordanhoare/aws-upskilling.svg)](https://github.com/jordanhoare/aws-upskilling/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/jordanhoare/aws-upskilling.svg)](https://github.com/jordanhoare/aws-upskilling/issues) [![Current Version](https://img.shields.io/badge/version-0.5.0-green.svg)](https://github.com/jordanhoare/aws-upskilling) 
 
 
-The purpose of this repo is to upskill on AWS services.   
-
-```
-https://workshops.aws/
-```
+A collection of AWS workshops (https://workshops.aws/) used to upskill.  The projects are defined in Python infrastructure as code, and are serverless/pay-per-usage so there aren't any persistent servers.   
 
 </br>
 
 
 ## AWS Portfolio
-#### CDK 
-  :hourglass: AWS Infrastructure (CDK & CloudFormation)
+  - [x] Click-counter (API Gateway and Lambda-based w/ DynamoDB)
   - [ ] Fraud Detection (Streaming, NoSQL, Kafka)
   - [ ] ETL On AWS (EMR, Spark, Hive, Hudi, Auto-scaling)
 
 </br>
 
 ## Requirements 
-- Python (3.8.2)
+- Python 
+- AWS CLI 
+- AWS CDK
 - Poetry (https://python-poetry.org/docs/)
-
-</br>
-
-
-## Running the app
-
-```bash
-....
-```
 
 </br>
 
