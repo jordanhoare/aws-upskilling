@@ -26,10 +26,13 @@ class HitCounter(Construct):
             self,
             "HitCountHandler",
             runtime=_lambda.Runtime.PYTHON_3_7,
-            handler="hitcounter.handler",
+            handler="hitcount.handler",
             code=_lambda.Code.from_asset("lambda"),
             environment={
                 "DOWNSTREAM_FUNCTION_NAME": downstream.function_name,
                 "HITS_TABLE_NAME": table.table_name,
             },
         )
+
+        table.grant_read_write_data(self.handler)
+        downstream.grant_invoke(self.handler)

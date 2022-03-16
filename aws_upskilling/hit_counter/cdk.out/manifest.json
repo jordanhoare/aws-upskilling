@@ -23,7 +23,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/b1626bfb12349ffa27bd9446c351338a69b1c7b6a9b4530c8ae50ea3735b4850.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e06ce062daebdcf4ab8a6134f7df735f8a7b33d5b276a4ce6aba730d2e5ff5d6.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -51,6 +51,30 @@
             "data": "HelloHandler2E4FBA4D"
           }
         ],
+        "/hit-counter/HelloHitCounter/Hits/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHits7AAEBF80"
+          }
+        ],
+        "/hit-counter/HelloHitCounter/HitCountHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandlerServiceRole42AAF829"
+          }
+        ],
+        "/hit-counter/HelloHitCounter/HitCountHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandlerServiceRoleDefaultPolicy0295D032"
+          }
+        ],
+        "/hit-counter/HelloHitCounter/HitCountHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandler2475EAC2"
+          }
+        ],
         "/hit-counter/Endpoint/Resource": [
           {
             "type": "aws:cdk:logicalId",
@@ -72,7 +96,7 @@
         "/hit-counter/Endpoint/Deployment/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointDeployment318525DA088c029ecd222175ec017dfbffdcba8b"
+            "data": "EndpointDeployment318525DA10a92215229ae518423d56bc148e41e2"
           }
         ],
         "/hit-counter/Endpoint/DeploymentStage.prod/Resource": [
