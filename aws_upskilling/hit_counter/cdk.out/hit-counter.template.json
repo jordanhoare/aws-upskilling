@@ -1,82 +1,9 @@
 {
   "Resources": {
-    "HitCounterQueueF091C6E1": {
-      "Type": "AWS::SQS::Queue",
-      "Properties": {
-        "VisibilityTimeout": 300
-      },
-      "UpdateReplacePolicy": "Delete",
-      "DeletionPolicy": "Delete",
-      "Metadata": {
-        "aws:cdk:path": "hit-counter/HitCounterQueue/Resource"
-      }
-    },
-    "HitCounterQueuePolicy72681AF7": {
-      "Type": "AWS::SQS::QueuePolicy",
-      "Properties": {
-        "PolicyDocument": {
-          "Statement": [
-            {
-              "Action": "sqs:SendMessage",
-              "Condition": {
-                "ArnEquals": {
-                  "aws:SourceArn": {
-                    "Ref": "HitCounterTopic1106EC80"
-                  }
-                }
-              },
-              "Effect": "Allow",
-              "Principal": {
-                "Service": "sns.amazonaws.com"
-              },
-              "Resource": {
-                "Fn::GetAtt": [
-                  "HitCounterQueueF091C6E1",
-                  "Arn"
-                ]
-              }
-            }
-          ],
-          "Version": "2012-10-17"
-        },
-        "Queues": [
-          {
-            "Ref": "HitCounterQueueF091C6E1"
-          }
-        ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "hit-counter/HitCounterQueue/Policy/Resource"
-      }
-    },
-    "HitCounterQueuehitcounterHitCounterTopicC2E9E2EDC6F931D1": {
-      "Type": "AWS::SNS::Subscription",
-      "Properties": {
-        "Protocol": "sqs",
-        "TopicArn": {
-          "Ref": "HitCounterTopic1106EC80"
-        },
-        "Endpoint": {
-          "Fn::GetAtt": [
-            "HitCounterQueueF091C6E1",
-            "Arn"
-          ]
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "hit-counter/HitCounterQueue/hitcounterHitCounterTopicC2E9E2ED/Resource"
-      }
-    },
-    "HitCounterTopic1106EC80": {
-      "Type": "AWS::SNS::Topic",
-      "Metadata": {
-        "aws:cdk:path": "hit-counter/HitCounterTopic/Resource"
-      }
-    },
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WNQQrCMBBFz9J9OmoFcd8L1Na9tGnEsXVSMwlSQu5uk4DgZv7/jwdTweEE+6L/cCnHqZxxAN/ZXk5iQzfPbwZ/ccopUd8pl3QbPaNcfzDPIJg2v3MDS4OLRU3R+NtXvaCMNJUQYm0Va2dk+lFrGjGaQTSrfWjaHeEMVfFkxNI4svhS0Ob8Aqv9SOi9AAAA"
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/zPSMzTTM1BMLC/WTU7J1s3JTNKrDi5JTM7WcU7LC0otzi8tSk4FsZ3z81IySzLz82p1AipLMvLz9I31LPSMFLOKMzN1i0rzSjJzU/WCIDQA6zhpPlUAAAA="
       },
       "Metadata": {
         "aws:cdk:path": "hit-counter/CDKMetadata/Default"
