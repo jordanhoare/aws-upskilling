@@ -1,9 +1,12 @@
 # 📝 Description
 
-This code provisions an AWS API Gateway- and Lambda-based website, and uses DynamoDB to store the hit counter. All infrastructure is "serverless" and pay per usage so there aren't any persistent servers. The project is defined in Python infrastructure as code so that it's easy to spin up and tear down environments without manual steps.
+This code provisions a sequence of modules, covering various aspects of building an analytics platform on AWS. The platform ingests, stores, transforms and consumes data using several analytics services such as AWS Glue, Amazon Athena, Amazon EMR, Amazon QuickSight as well as AWS Lambda and Amazon Redshift.  All infrastructure is "serverless" and pay per usage so there aren't any persistent servers.
+</br>
 
+![Alt text](lab-architecture.png)
 
 </br>
+
 
 - [ ] Design serverless data lake architecture
 - [ ] Build a data processing pipeline and Data Lake using Amazon S3 for storing data
